@@ -1,32 +1,32 @@
 
-import './App.css';
-import image from "./imageInSrc.png"
-import video from "./myVideo.mp4"
+import './style.css'; 
+import image from "./imageInSrc.png";
+
 
 function App() {
   return (
-    <>
+    <div className = 'App'>
           <div style = {{border: "solid 1px black" , maxWidth:" 100vw"}}>
                
-           <h1 className = 'title red'> Votre nom ici </h1>
+           <h1 className = 'title'> GOmycode </h1>
            
 
-           <img src ={image}  alt="film" />
+           <img src ={image}  alt="film" className ='imgsrc' />
            
            <br />
           
 
-           <img src = "/imageInPublic.PNG" alt="film" />
+           <img src = "/imageInPublic.png" alt="film"  className ='imgpublic'/>
            
 
           </div>
 
-          <video width= '320'  height='240' controls={true} />
+          <video width= '720'  height='540' controls= {true}  className='video'/>
 
-          <source src= {video} type = "video/mp4"/>
+          <source src= "/myVideo.mp4" type = "video/mp4" />
 
           
-     </>
+     </div>
   );
 }
 
